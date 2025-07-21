@@ -1,0 +1,6 @@
+Conditions:
+name|start|end are mandatory
+Date Format=2018-01-01
+Overwrite is not possible only append
+Remove all lines above the headers before upload
+name,start,end

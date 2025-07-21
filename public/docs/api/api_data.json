@@ -1,0 +1,973 @@
+[
+  {
+    "type": "get",
+    "url": "coverage/check?api_token=",
+    "title": "Check API",
+    "name": "Check",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"data\": [\n         \"message\": \"Okay\"\n     ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/class_room/info",
+    "title": "Class Room Information",
+    "name": "ClassRoomInfo",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "class_room_id",
+            "description": "<p>ID of the class room.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "class_room",
+            "description": "<p>Name of class room.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "class_teacher",
+            "description": "<p>Class room teacher.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "total_student",
+            "description": "<p>Class room total students.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "absent_student",
+            "description": "<p>Class room absent students.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"class_room\": \"1-A\",\n     \"class_teacher\": \"David\",\n     \"total_student\": 20,\n     \"absent_student\": 1\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/device",
+    "title": "Device Registration",
+    "name": "DeviceRegistration",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "class_room_id",
+            "description": "<p>ID of the class_room.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "device_id",
+            "description": "<p>ID of the device.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Message of device rgistration.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"message\": \"The device has been registered successfully.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/subject/chapter",
+    "title": "Get Chapter",
+    "name": "GetChapterForSubject",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Subject id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the chapter.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "number",
+            "description": "<p>Number of the chapter.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the chapter.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"chapter\": [{\n         \"id\": 1,\n         \"number\": \"1\",\n         \"name\": \"Basic calculus\"          \n     }]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/class_room",
+    "title": "Get Class Room",
+    "name": "GetClassRoom",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the class room.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the class room.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"chapter\": [{\n         \"id\": 1,\n         \"name\": \"1 A\"          \n     }]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/class_room/student",
+    "title": "Get Student",
+    "name": "GetStudentForClassRoom",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Class Room id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the student.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "first_name",
+            "description": "<p>First name of the student.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "surname",
+            "description": "<p>Surname of the student.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"student\": [{\n         \"id\": 1,\n         \"first_name\": \"Peter\",\n         \"surname\": \"David\"          \n     }]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/class_room/subject",
+    "title": "Get Subject",
+    "name": "GetSubjectForClassRoom",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>Class Room id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the subject.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the subject.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"subject\": [{\n         \"id\": 1,\n         \"name\": \"Maths\",\n         \"language\": \"Sinhala\"              \n     }]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "login",
+    "title": "Login",
+    "name": "Login",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "pin_code",
+            "description": "<p>Users pin code.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Name of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>Email of the User.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>API Token of the User.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"data\": {\n         \"id\": 1,\n         \"name\": \"Administrator\",\n         \"email\": \"admin@bs.com\",\n         ...\n         \"api_token\": \"gSQB8eGiIWf6Uun8QmmHAQxryXEYJrWQ81HsfQRmomVc97BXVvqwlzSbf6a6\"\n     }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User",
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "TheGivenDataWasInvalid",
+            "description": "<p>The email or password is incorrect.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 422 Unproccessable Entities\n{\n  \"message\": \"The given data was invalid.\",\n  \"error\": {\n         \"email\": [\n                 \"These credentials do not match our records\"\n             ]\n     }\n}",
+          "type": "json"
+        }
+      ]
+    }
+  },
+  {
+    "type": "post",
+    "url": "logout",
+    "title": "Logout",
+    "name": "Logout",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"data\": \"User logged out.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/class_room/register",
+    "title": "Marking Class Room Register",
+    "name": "MarkingClassRoomRegister",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "teacher_id",
+            "description": "<p>ID of the teacher.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "class_room_id",
+            "description": "<p>ID of the class room.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Array",
+            "optional": false,
+            "field": "student_ids",
+            "description": "<p>Array of student ids.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Command success message.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"message\": {Registration has been done successfully.}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/period/begin",
+    "title": "Period Begin",
+    "name": "PeriodBegin",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "teacher_id",
+            "description": "<p>ID of the teacher.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "class_room_id",
+            "description": "<p>ID of the class room.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "chapter_id",
+            "description": "<p>ID of the chapter.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "coverage",
+            "description": "<p>Presentage of chapter coverage.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the period.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"period\": {\n         \"id\": 1,\n         \"subject\": \"Maths\",\n         \"chapter\": \"Algibra\",\n         \"date\": \"2018-05-23\",\n         \"time_in\": \"09:30:00\"\n         \"coverage\" : 50\n      }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/period/complete",
+    "title": "Period Complete",
+    "name": "PeriodComplete",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "period_id",
+            "description": "<p>ID of the teacher.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "progress",
+            "description": "<p>Progress of the chapter.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>Command success message.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"message\": {\"Syllabus progress has been updated successfully.\"}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/period/incomplete",
+    "title": "Period Incomplete",
+    "name": "PeriodIncomplete",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "api_token",
+            "description": "<p>Users API token.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "teacher_id",
+            "description": "<p>ID of the teacher.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "class_room_id",
+            "description": "<p>ID of the class room.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "coverage",
+            "description": "<p>Presentage of chapter coverage.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the period.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "subject",
+            "description": "<p>Name of the subject.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "chapter",
+            "description": "<p>Name of the chapter.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Date",
+            "optional": false,
+            "field": "date",
+            "description": "<p>The date of period begin.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Time",
+            "optional": false,
+            "field": "time_in",
+            "description": "<p>The time of period begin.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"period\": {\n         \"id\": 1,\n         \"subject\": \"Maths\",\n         \"chapter\": \"Algibra\",\n         \"date\": \"2018-05-23\",\n         \"time_in\": \"09:30:00\"\n         \"coverage\" : 50\n      }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/feedback",
+    "title": "Student Feedback",
+    "name": "StudentFeedback",
+    "version": "0.1.1",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "period_id",
+            "description": "<p>ID of the period.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "point",
+            "description": "<p>Point for the teacher.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the feedback.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "student_id",
+            "description": "<p>ID of the student.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "teacher_id",
+            "description": "<p>ID of the teacher.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "period_id",
+            "description": "<p>ID of the period.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "point",
+            "description": "<p>Point for the teacher.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "photo",
+            "description": "<p>Photo of the student.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"period\": {\n         \"id\": 1,\n         \"period_id\": \"1\",\n         \"teacher_id\": \"5\",\n         \"point\": 100\n      }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "coverage/feedback",
+    "title": "Student Feedback",
+    "name": "StudentFeedback",
+    "version": "0.1.0",
+    "group": "User",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "admission_number",
+            "description": "<p>Student admission numbern.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "period_id",
+            "description": "<p>ID of the period.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "point",
+            "description": "<p>Point for the teacher.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "image",
+            "description": "<p>Student photo.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>ID of the feedback.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "student_id",
+            "description": "<p>ID of the student.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "teacher_id",
+            "description": "<p>ID of the teacher.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "period_id",
+            "description": "<p>ID of the period.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "point",
+            "description": "<p>Point for the teacher.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "photo",
+            "description": "<p>Photo of the student.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n{\n     \"period\": {\n         \"id\": 1,\n         \"student_id\": \"1\",\n         \"period_id\": \"1\",\n         \"teacher_id\": \"5\",\n         \"point\": 100\n         \"photo\" : \"photo.jpg\"\n      }\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "resources/api/project.js",
+    "groupTitle": "User"
+  }
+]

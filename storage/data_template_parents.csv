@@ -1,0 +1,5 @@
+Conditions:
+All fields are optional
+Overwrite is not possible only append
+Remove all lines above the headers before upload
+admission_number,name,father_name,father_mobile,father_email,father_occupation,father_name_of_employment,father_address_of_employment,father_office_telephone,mother_name,mother_mobile,mother_email,mother_occupation,mother_name_of_employment,mother_address_of_employment,mother_office_telephone,guardian_name,guardian_mobile,guardian_email,guardian_occupation,guardian_name_of_employment,guardian_address_of_employment,guardian_office_telephone

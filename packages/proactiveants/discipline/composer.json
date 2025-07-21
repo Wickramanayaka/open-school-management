@@ -1,0 +1,37 @@
+{
+    "name": "proactiveants/discipline",
+    "description": "The package is a part of Bluesmart School, provide way to track the students discipline.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chamal Ayesh Wickramanayaka",
+            "email": "chamal.aw@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">7.0",
+        "illuminate/support": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProactiveAnts\\Discipline\\DisciplineServiceProvider"
+            ],
+            "aliases": {
+                "Discipline": "ProactiveAnts\\Discipline\\DisciplineFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ProactiveAnts\\Discipline\\" : "src/",
+            "files\\": "src/helpers.php"
+        }
+    }
+}

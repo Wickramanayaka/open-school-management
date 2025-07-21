@@ -1,0 +1,114 @@
+Conditions:
+admission_number|surname|first_name|date_of_birth
+|gender|address|admitted_date
+|admitted_class_room_id|house_id|cluster_id|
+present_class_room_id|present_academic_year_id,transport_id,distance,town are mandatory
+Date Format=2018-01-01
+Gender=Male/Female
+Overwrite is not possible only append
+Remove all lines above the headers before upload
+Maximum number of records for a sheet is 1000
+House
+Id=1,Name=Wallyn
+Id=2,Name=Vanreeth
+Id=3,Name=Vincent
+Id=4,Name=Malpingnano
+Cluster
+Id=1,Name=Cluster 1
+Id=2,Name=Cluster 2
+Class Room
+Id=1,Name=1A
+Id=2,Name=1B
+Id=3,Name=1C
+Id=4,Name=2A
+Id=5,Name=2B
+Id=6,Name=2C
+Id=7,Name=3A
+Id=8,Name=3B
+Id=9,Name=3C
+Id=10,Name=4A
+Id=11,Name=4B
+Id=12,Name=4C
+Id=13,Name=5A
+Id=14,Name=5B
+Id=15,Name=5C
+Id=16,Name=6A
+Id=17,Name=6B
+Id=18,Name=6C
+Id=19,Name=6D
+Id=20,Name=6E
+Id=21,Name=6F
+Id=22,Name=7A
+Id=23,Name=7B
+Id=24,Name=7C
+Id=25,Name=7D
+Id=26,Name=7E
+Id=27,Name=7F
+Id=28,Name=8A
+Id=29,Name=8B
+Id=30,Name=8C
+Id=31,Name=8D
+Id=32,Name=8E
+Id=33,Name=8F
+Id=34,Name=9A
+Id=35,Name=9B
+Id=36,Name=9C
+Id=37,Name=9D
+Id=38,Name=9E
+Id=39,Name=9F
+Id=40,Name=10A
+Id=41,Name=10B
+Id=42,Name=10C
+Id=43,Name=10D
+Id=44,Name=10E
+Id=45,Name=10F
+Id=46,Name=11A
+Id=47,Name=11B
+Id=48,Name=11C
+Id=49,Name=11D
+Id=50,Name=11E
+Id=51,Name=11F
+Id=52,Name=12AA
+Id=53,Name=12AB
+Id=54,Name=13AA
+Id=55,Name=13AB
+Id=56,Name=12CA
+Id=57,Name=12CB
+Id=59,Name=13CA
+Id=60,Name=13CB
+Id=61,Name=13C3
+Id=62,Name=12BA
+Id=63,Name=12MA
+Id=64,Name=12MB
+Id=66,Name=12TA
+Id=67,Name=12TB
+Id=68,Name=13BA
+Id=69,Name=13MA
+Id=70,Name=13MB
+Id=72,Name=13TA
+Id=73,Name=13TB
+Id=74,Name=12MC
+Academic Year
+Id=1,Name=2005
+Id=2,Name=2006
+Id=3,Name=2007
+Id=4,Name=2008
+Id=5,Name=2009
+Id=6,Name=2010
+Id=7,Name=2011
+Id=8,Name=2012
+Id=9,Name=2013
+Id=10,Name=2014
+Id=11,Name=2015
+Id=12,Name=2016
+Id=13,Name=2017
+Id=14,Name=2018
+Id=15,Name=2019
+Id=16,Name=2020
+Type of transport
+Id=1,Name=Bus
+Id=2,Name=School Van
+Id=3,Name=Private Vehicle
+Id=4,Name=Walking
+Id=5,Name=Other
+admission_number,surname,first_name,other_name,date_of_birth,id_number,gender,address,photo,admitted_date,admitted_academic_year_id,admitted_class_room_id,house_id,cluster_id,present_class_room_id,present_academic_year_id,transport_id,distance,town,scholarship_mark

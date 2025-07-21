@@ -1,0 +1,36 @@
+{
+    "name": "proactiveants/coverage",
+    "description": "The package is a part of Bluesmart School, provide way to track the subject syllabus coverage, record teacher check in check out time for class room and student \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dwhether the students are presnt or absent for the school",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chamal Ayesh Wickramanayaka",
+            "email": "chamal.aw@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">7.0",
+        "illuminate/support": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProactiveAnts\\Coverage\\CoverageServiceProvider"
+            ],
+            "aliases": {
+                "Coverage": "ProactiveAnts\\Coverage\\CoverageFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ProactiveAnts\\Coverage\\" : "src/"
+        }
+    }
+}

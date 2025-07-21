@@ -1,0 +1,5 @@
+Conditions:
+class_room|grade|division are mandatory
+Overwrite is not possible only append
+Remove all lines above the headers before upload
+class_room,grade,division

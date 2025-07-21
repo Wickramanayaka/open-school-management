@@ -1,0 +1,13 @@
+Conditions:
+code|name|academic_year_id|start|end|number_of_days|sequence are mandatory
+Date Format=2018-01-01
+Overwrite is not possible only append
+Remove all lines above the headers before upload
+Academic Year
+Id=1,Name=2014
+Id=2,Name=2015
+Id=3,Name=2016
+Id=4,Name=2017
+Id=5,Name=2018
+Id=6,Name=2019
+code,name,academic_year_id,start,end,number_of_days,sequence

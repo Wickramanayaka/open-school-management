@@ -1,0 +1,36 @@
+{
+    "name": "proactiveants/parents",
+    "description": "The package is a part of Bluesmart School, provides back-end for Bluesmart School Parents Mobile Application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chamal Ayesh Wickramanayaka",
+            "email": "chamal.aw@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">7.0",
+        "illuminate/support": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ProactiveAnts\\Parents\\ParentsServiceProvider"
+            ],
+            "aliases": {
+                "Parents": "ProactiveAnts\\Parents\\ParentsFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ProactiveAnts\\Parents\\" : "src/"
+        }
+    }
+}

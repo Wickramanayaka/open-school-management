@@ -1,0 +1,154 @@
+Conditions:
+admission_number|surname|first_name|date_of_birth|id_number|gender
+|address|telephone|email|present_class_room_id|present_academic_year_id are mandatory
+Date Format=2018-01-01
+Gender=Male/Female
+Overwrite is not possible only append
+Remove all lines above the headers before upload
+Class Room
+Id=1,Name=1A
+Id=2,Name=1B
+Id=3,Name=1C
+Id=4,Name=1D
+Id=5,Name=1E
+Id=6,Name=1F
+Id=7,Name=1G
+Id=8,Name=2A
+Id=9,Name=2B
+Id=10,Name=2C
+Id=11,Name=2D
+Id=12,Name=2E
+Id=13,Name=2F
+Id=14,Name=2G
+Id=15,Name=3A
+Id=16,Name=3B
+Id=17,Name=3C
+Id=18,Name=3D
+Id=19,Name=3E
+Id=20,Name=3F
+Id=21,Name=3G
+Id=22,Name=4A
+Id=23,Name=4B
+Id=24,Name=4C
+Id=25,Name=4D
+Id=26,Name=4E
+Id=27,Name=4F
+Id=28,Name=4G
+Id=29,Name=5A
+Id=30,Name=5B
+Id=31,Name=5C
+Id=32,Name=5D
+Id=33,Name=5E
+Id=34,Name=5F
+Id=35,Name=5G
+Id=36,Name=6A
+Id=37,Name=6B
+Id=38,Name=6C
+Id=39,Name=6D
+Id=40,Name=6E
+Id=41,Name=6F
+Id=42,Name=6G
+Id=43,Name=6H
+Id=44,Name=7A
+Id=45,Name=7B
+Id=46,Name=7C
+Id=47,Name=7D
+Id=48,Name=7E
+Id=49,Name=7F
+Id=50,Name=7G
+Id=51,Name=7H
+Id=52,Name=8A
+Id=53,Name=8B
+Id=54,Name=8C
+Id=55,Name=8D
+Id=56,Name=8E
+Id=57,Name=8F
+Id=58,Name=8G
+Id=59,Name=8H
+Id=60,Name=9A
+Id=61,Name=9B
+Id=62,Name=9C
+Id=63,Name=9D
+Id=64,Name=9E
+Id=65,Name=9F
+Id=66,Name=9G
+Id=67,Name=9H
+Id=68,Name=10A
+Id=69,Name=10B
+Id=70,Name=10C
+Id=71,Name=10D
+Id=72,Name=10E
+Id=73,Name=10F
+Id=74,Name=10G
+Id=75,Name=10H
+Id=76,Name=11A
+Id=77,Name=11B
+Id=78,Name=11C
+Id=79,Name=11D
+Id=80,Name=11E
+Id=81,Name=11F
+Id=82,Name=11G
+Id=83,Name=11H
+Id=84,Name=12SA
+Id=85,Name=12SB
+Id=86,Name=12SC
+Id=87,Name=12SD
+Id=88,Name=12SE
+Id=89,Name=12CA
+Id=90,Name=12CB
+Id=91,Name=12CC
+Id=92,Name=12CE
+Id=93,Name=12CT
+Id=94,Name=12ArtA
+Id=95,Name=13SA
+Id=96,Name=13SB
+Id=97,Name=13SC
+Id=98,Name=13SD
+Id=99,Name=13SE
+Id=100,Name=13CA
+Id=101,Name=13CB
+Id=102,Name=13CC
+Id=103,Name=13CD
+Id=104,Name=13CE
+Id=105,Name=13AA
+Id=106,Name=13AB
+Id=107,Name=11-OUTA
+Id=108,Name=11-OUTB
+Id=109,Name=11-OUTC
+Id=110,Name=11-OUTD
+Id=111,Name=11-OUTE
+Id=112,Name=11-OUTF
+Id=113,Name=11-OUTG
+Id=114,Name=11-OUTH
+Id=115,Name=MusicDEVICE
+Id=116,Name=DanceDEVICE
+Id=117,Name=13Ex CA
+Id=118,Name=13Ex CB
+Id=119,Name=13Ex CC
+Id=120,Name=13Ex CD
+Id=121,Name=13Ex CE
+Id=122,Name=13Ex SA
+Id=123,Name=13Ex SB
+Id=124,Name=13Ex SC
+Id=125,Name=13Ex SD
+Id=126,Name=13Ex SE
+Id=127,Name=13Ex AA
+Id=128,Name=13Ex AB
+Id=129,Name=13CT
+Id=130,Name=12CD
+Academic Year
+Id=1,Name=2005
+Id=2,Name=2006
+Id=3,Name=2007
+Id=4,Name=2008
+Id=5,Name=2009
+Id=6,Name=2010
+Id=7,Name=2011
+Id=8,Name=2012
+Id=9,Name=2013
+Id=10,Name=2014
+Id=11,Name=2015
+Id=12,Name=2016
+Id=13,Name=2017
+Id=14,Name=2018
+admission_number,surname,first_name,other_name,date_of_birth,id_number,gender,address,telephone,email,photo,present_class_room_id,present_academic_year_id
