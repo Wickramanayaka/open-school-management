@@ -38,8 +38,8 @@ Follow these instructions to set up the project locally for development or testi
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/your-username/open-school-management-system.git
-   cd open-school-management-system
+   git clone https://github.com/your-username/open-school-management.git
+   cd open-school-management
    ```
 
 2. **Install dependencies:**
@@ -56,6 +56,10 @@ Follow these instructions to set up the project locally for development or testi
      cp .env.example .env
      ```
    * Update database credentials and other necessary configurations in `.env`.
+   * Generate app key in `.env`.
+      ```bash
+      php artisan key:generate
+      ```
 
 4. **Run database migrations:**
 
