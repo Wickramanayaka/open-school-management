@@ -38,7 +38,7 @@ Follow these instructions to set up the project locally for development or testi
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/your-username/open-school-management.git
+   git clone https://github.com/wickramanayaka/open-school-management.git
    cd open-school-management
    ```
 
